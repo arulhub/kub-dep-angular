@@ -1,0 +1,19 @@
+.card {
+    width: 500px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divider {
+    max-width: 90%;    
+    margin-left: 5%;
+}
+
+.float-right {
+    float: right;
+}
+
+.button-class {
+    margin: 1%;
+}

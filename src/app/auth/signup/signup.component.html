@@ -1,5 +1,5 @@
 <mat-card class="card">
-    <mat-card-title>Sign-In</mat-card-title>    
+    <mat-card-title>Sign-Up</mat-card-title>    
     <mat-card-content>
         <div>
             <mat-form-field appearance="standard">
@@ -17,8 +17,8 @@
     <mat-divider class="divider"></mat-divider>
     <mat-card-actions>
         <div class="button-class">
-            <button type="button" mat-raised-button color="accent" (click)="onSignIn(userName.value, password.value)">Sign-In</button>
-            <button type="button" mat-raised-button color="primary" routerLink="/auth/sign-up">Sign Up</button>
+            <button type="button" mat-raised-button color="accent" (click)="onSignUp(userName.value, password.value)">Sign-Up</button>
+            <button type="button" mat-raised-button color="primary" routerLink="/auth/sign-in">Sign In</button>
         </div>
     </mat-card-actions>
 </mat-card>

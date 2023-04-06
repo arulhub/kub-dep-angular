@@ -1,1 +1,11 @@
-<p>view-tasks works!</p>
+<mat-card class="card" *ngIf="tasks">
+    <mat-card-title>View Tasks</mat-card-title>
+    <mat-card-content>
+        <mat-list role="list" *ngFor="let task of tasks.tasks">
+            <mat-list-item role="listItem">{{task.title}} - {{task.text}}</mat-list-item>
+        </mat-list>
+    </mat-card-content>
+</mat-card>
+<mat-card class="card" *ngIf="!tasks">
+    <mat-card-title>No Tasks</mat-card-title>
+</mat-card>

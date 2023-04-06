@@ -1,1 +1,23 @@
-<p>create-tasks works!</p>
+<mat-card class="card">
+    <mat-card-title>Create Task</mat-card-title>    
+    <mat-card-content>
+        <div>
+            <mat-form-field appearance="standard">
+                <mat-label>Title</mat-label>
+                <input type="text" placeholder="Enter a title for your task" matInput #title>
+            </mat-form-field>
+        </div>   
+        <div>
+            <mat-form-field apperance="standard">
+                <mat-label>Text</mat-label>
+                <input type="text" placeholder="Enter a text for your task" matInput #text>
+            </mat-form-field>
+        </div>             
+    </mat-card-content>
+    <mat-divider class="divider"></mat-divider>
+    <mat-card-actions>
+        <div class="button-class">
+            <button type="button" mat-raised-button color="accent" (click)="onCreate(title.value, text.value)">Create</button>            
+        </div>
+    </mat-card-actions>
+</mat-card>
