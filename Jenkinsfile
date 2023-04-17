@@ -8,7 +8,7 @@ node {
     }
 
     stage('docker build/push') {
-     docker.withRegistry('https://hub.docker.com', 'dockerhub') {
+     docker.withRegistry('https://registry.hub.docker.com/v2/', 'dockerhub') {
        def app = docker.build("arulhub4docker/kub-dep-angular:${commit_id}", '.').push()
      }
    }
