@@ -9,7 +9,7 @@ node {
 
     stage('docker build/push') {
      docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
-       def app = docker.build("arulhub4docker/kub-dep-angular:${commit_id}", '.').push()
+       def app = docker.build("arulhub4docker/kub-dep-angular:latest", '.').push()
      }
    }
 }
