@@ -1,0 +1,7 @@
+---
+- name: Deploy to K8s Cluster
+  hosts: webservers   
+  tasks:
+    - name: Deploy auth API
+      shell: |
+        kubectl apply -f=frontend.yaml
