@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  usersApi: 'ae83b8520f967403ea102c1645a511af-1476041146.us-east-1.elb.amazonaws.com',
-  tasksApi: 'a98e7c80a6c8f41d3afe435ddb53eb8d-1114271319.us-east-1.elb.amazonaws.com'
+  usersApi: 'a283913c72adf481e92cf74bfc900f5e-2042939744.ap-south-1.elb.amazonaws.com',
+  tasksApi: 'abeb95de681ab45dead507a11da11337-502349101.ap-south-1.elb.amazonaws.com'
 };
