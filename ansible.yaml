@@ -2,6 +2,10 @@
 - name: Deploy to K8s Cluster
   hosts: webservers   
   tasks:
-    - name: Deploy auth API
+    - name: clone repository
+      git: >
+        repo=https://github.com/arulhub/kub-dep-angular.git          
+        dest=/opt/kub-demo/kub-dep-angular
+    - name: Deploy Angular
       shell: |
-        kubectl apply -f=frontend.yaml
+        kubectl apply -f=/opt/kub-demo/kub-dep-angular/frontend.yaml
