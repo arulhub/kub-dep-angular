@@ -38,7 +38,7 @@ pipeline {
   agent any
 
   environment {
-    NAME = "kup-dep-angular"
+    NAME = "kub-dep-angular"
     IMAGE_REPO = "arulhub4docker" 
     VERSION = "${env.BUILD_ID}-${env.GIT_COMMIT}"   
   }
