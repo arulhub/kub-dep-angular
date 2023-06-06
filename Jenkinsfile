@@ -67,7 +67,7 @@ pipeline {
 
     stage('Update Manifest'){
       steps{
-        dir('/manifests') {
+        dir('manifests') {
           sh 'sed -i "s#arulhub4docker.*#${IMAGE_REPO}/${NAME}:${VERSION}#g" frontend.yaml'
           sh 'cat frontend.yaml'
         }
@@ -76,7 +76,7 @@ pipeline {
 
     stage('commit & push') {
       steps{
-        dir('/manifests'){
+        dir('manifests'){
           sh "git config --global user.email 'jenkins@ci.com'"
           sh "git add -A"
           sh "git commit -am 'Updated image version to ${VERSION}'"
