@@ -77,7 +77,7 @@ pipeline {
     stage('commit & push') {
       steps{
         dir('manifests'){
-          sh "git config --global user.email 'jenkins@ci.com'"
+          sh "git config --global user.email 'arul.murugan.1991@gmail.com'"
           sh "git add -A"
           sh "git commit -am 'Updated image version to ${VERSION}'"
           sh "git push origin HEAD:master --force"
