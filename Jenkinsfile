@@ -38,7 +38,7 @@ pipeline {
   environment {
     NAME = "kup-dep-angular"
     IMAGE_REPO = "arulhub4docker" 
-    VERSION = "${env.BUILD_ID} - ${env.GIT_COMMIT}"   
+    VERSION = "${env.BUILD_ID}-${env.GIT_COMMIT}"   
   }
 
   stages {
