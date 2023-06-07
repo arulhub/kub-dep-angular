@@ -27,5 +27,5 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: arulhub4docker/kub-dep-angular:latest
+          image: arulhub4docker/kub-dep-angular:11-dae98585064904123e75369c62fb204a0124d8f1
 
