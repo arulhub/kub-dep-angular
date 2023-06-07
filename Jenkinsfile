@@ -79,12 +79,13 @@ pipeline {
         dir('manifests'){
           // sh "git config --global user.name 'Arul Murugan'"
           // sh "git config --global user.email 'arul.murugan.1991@gmail.com'"
-          withCredentials([gitUsernamePassword(credentialsId: 'jenkins-cred')]) {          
-          sh "git add ."
-          sh "git commit -am 'Updated image version to ${VERSION}'"          
-          sh "git push origin HEAD:master --force"
+          withCredentials([gitUsernamePassword(credentialsId: 'jenkins-cred')]){          
+            sh "git add ."
+            sh "git commit -am 'Updated image version to ${VERSION}'"          
+            sh "git push origin HEAD:master --force"
+          }
         }
-      }
+      }  
     }
   }
 }
